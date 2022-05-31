@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b2b0d69-e041-49ca-8b0d-af2e6993c506" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="222S39vHSiwFNqblwyqyQDf55Ec" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dfresh" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dfresh/apps/user" />
+      <recent name="$PROJECT_DIR$/dfresh/apps/order" />
+      <recent name="$PROJECT_DIR$/dfresh/apps/goods" />
+      <recent name="$PROJECT_DIR$/dfresh/db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dfresh/apps" />
+      <recent name="$PROJECT_DIR$/fresh/apps" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b2b0d69-e041-49ca-8b0d-af2e6993c506" name="Default Changelist" comment="" />
+      <created>1639033988845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639033988845</updated>
+      <workItem from="1639033992307" duration="660000" />
+      <workItem from="1639039282203" duration="122000" />
+      <workItem from="1639040536314" duration="14000" />
+      <workItem from="1639059091210" duration="71000" />
+      <workItem from="1639123007518" duration="11000" />
+      <workItem from="1639201103995" duration="165000" />
+      <workItem from="1639285161872" duration="16000" />
+      <workItem from="1639668404670" duration="62000" />
+      <workItem from="1641895233643" duration="28000" />
+      <workItem from="1641895328880" duration="152000" />
+      <workItem from="1641895586340" duration="1476000" />
+      <workItem from="1641897076647" duration="4546000" />
+      <workItem from="1641901692635" duration="17000" />
+      <workItem from="1641901711768" duration="112000" />
+      <workItem from="1641901835394" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

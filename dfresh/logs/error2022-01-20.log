@@ -1,0 +1,1864 @@
+[2022-01-20 10:05:11,614] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 7, in get
+    render(request, 'pplace_order.html')
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pplace_order.html
+[2022-01-20 10:05:11,615] [ERROR] "GET /order/pay HTTP/1.1" 500 91337
+[2022-01-20 10:05:24,704] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.order.views.view didn't return an HttpResponse object. It returned None instead.
+[2022-01-20 10:05:24,705] [ERROR] "GET /order/pay HTTP/1.1" 500 69543
+[2022-01-20 10:05:25,841] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.order.views.view didn't return an HttpResponse object. It returned None instead.
+[2022-01-20 10:05:25,842] [ERROR] "GET /order/pay HTTP/1.1" 500 69543
+[2022-01-20 10:51:26,891] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:54:25,945] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:54:42,914] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:55:03,471] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:55:46,804] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:08,958] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:17,734] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:21,190] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:24,235] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:27,430] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:56:31,193] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:57:15,966] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:59:01,586] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 10:59:07,615] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 11:16:27,996] [ERROR] unsupported operand type(s) for +=: 'int' and 'str', 更新购物车商品失败，数据库链接失败
+[2022-01-20 15:53:00,725] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 25, in post
+    goods_totail = goods_totail.place('总价：', '')
+AttributeError: 'str' object has no attribute 'place'
+[2022-01-20 15:53:00,725] [ERROR] "POST /order/pay HTTP/1.1" 500 86272
+[2022-01-20 15:53:05,331] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 25, in post
+    goods_totail = goods_totail.place('总价：', '')
+AttributeError: 'str' object has no attribute 'place'
+[2022-01-20 15:53:05,332] [ERROR] "POST /order/pay HTTP/1.1" 500 86272
+[2022-01-20 15:53:06,220] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 25, in post
+    goods_totail = goods_totail.place('总价：', '')
+AttributeError: 'str' object has no attribute 'place'
+[2022-01-20 15:53:06,221] [ERROR] "POST /order/pay HTTP/1.1" 500 86272
+[2022-01-20 15:53:07,194] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 25, in post
+    goods_totail = goods_totail.place('总价：', '')
+AttributeError: 'str' object has no attribute 'place'
+[2022-01-20 15:53:07,194] [ERROR] "POST /order/pay HTTP/1.1" 500 86272
+[2022-01-20 15:53:12,989] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 25, in post
+    goods_totail = goods_totail.place('总价：', '')
+AttributeError: 'str' object has no attribute 'place'
+[2022-01-20 15:53:12,989] [ERROR] "POST /order/pay HTTP/1.1" 500 86272
+[2022-01-20 16:15:57,467] [ERROR] Internal Server Error: /list
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.goods.views.view didn't return an HttpResponse object. It returned None instead.
+[2022-01-20 16:15:57,468] [ERROR] "GET /list HTTP/1.1" 500 69965
+[2022-01-20 16:22:50,033] [ERROR] Internal Server Error: /list/2
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 58, in get
+    for goods in goods_type:
+TypeError: 'GoodsType' object is not iterable
+[2022-01-20 16:22:50,034] [ERROR] "GET /list/2 HTTP/1.1" 500 78583
+[2022-01-20 16:33:20,724] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 16:33:24,456] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-20 16:44:44,596] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 64, in get
+    pages = paginator.num_pages()
+TypeError: 'int' object is not callable
+[2022-01-20 16:44:44,597] [ERROR] "GET /list/1 HTTP/1.1" 500 80090
+[2022-01-20 16:46:40,716] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 64, in get
+    pages = paginator.num_pages()
+TypeError: 'int' object is not callable
+[2022-01-20 16:46:40,717] [ERROR] "GET /list/1 HTTP/1.1" 500 80090
+[2022-01-20 16:46:41,666] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 64, in get
+    pages = paginator.num_pages()
+TypeError: 'int' object is not callable
+[2022-01-20 16:46:41,667] [ERROR] "GET /list/1 HTTP/1.1" 500 80090
+[2022-01-20 16:49:37,679] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 64, in get
+    pages = paginator.num_pages()
+TypeError: 'int' object is not callable
+[2022-01-20 16:49:37,680] [ERROR] "GET /list/1 HTTP/1.1" 500 80090
+[2022-01-20 16:49:40,041] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 64, in get
+    pages = paginator.num_pages()
+TypeError: 'int' object is not callable
+[2022-01-20 16:49:40,042] [ERROR] "GET /list/1 HTTP/1.1" 500 79802
+[2022-01-20 16:49:53,942] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 74, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 170, in render
+    values = list(values)
+TypeError: 'int' object is not iterable
+[2022-01-20 16:49:53,944] [ERROR] "GET /list/1 HTTP/1.1" 500 184283
+[2022-01-20 16:49:54,700] [ERROR] Internal Server Error: /list/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 74, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 170, in render
+    values = list(values)
+TypeError: 'int' object is not iterable
+[2022-01-20 16:49:54,701] [ERROR] "GET /list/1 HTTP/1.1" 500 184283
+[2022-01-20 17:07:44,518] [ERROR] Internal Server Error: /list/23/2
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 58, in get
+    goods_type = GoodsType.objects.get(id=goods_type_id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsType.DoesNotExist: GoodsType matching query does not exist.
+[2022-01-20 17:07:44,520] [ERROR] "GET /list/23/2 HTTP/1.1" 500 88021
+[2022-01-20 17:08:18,543] [ERROR] Internal Server Error: /list/23
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 58, in get
+    goods_type = GoodsType.objects.get(id=goods_type_id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsType.DoesNotExist: GoodsType matching query does not exist.
+[2022-01-20 17:08:18,544] [ERROR] "GET /list/23 HTTP/1.1" 500 87775
+[2022-01-20 17:08:25,628] [ERROR] Internal Server Error: /list/4
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 66, in get
+    if not page:
+UnboundLocalError: local variable 'page' referenced before assignment
+[2022-01-20 17:08:25,629] [ERROR] "GET /list/4 HTTP/1.1" 500 79975
+[2022-01-20 18:28:21,368] [ERROR] User matching query does not exist.
+[2022-01-20 18:28:40,113] [ERROR] list index out of range, lishangshu没有地址信息
+[2022-01-20 18:28:45,168] [ERROR] list index out of range, lishangshu没有地址信息
+[2022-01-20 18:28:48,521] [ERROR] list index out of range, lishangshu没有地址信息
+[2022-01-20 18:29:37,455] [ERROR] list index out of range, lishangshu没有地址信息
+[2022-01-20 22:42:19,458] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)# # 是否有前一页
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(2,)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:42:19,460] [ERROR] "GET /list/6/1 HTTP/1.1" 500 228491
+[2022-01-20 22:43:47,115] [ERROR] Internal Server Error: /list/1/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)# # 是否有前一页
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(2,)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:43:47,116] [ERROR] "GET /list/1/1 HTTP/1.1" 500 228564
+[2022-01-20 22:57:07,111] [ERROR] Internal Server Error: /list/4/1/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 81, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(1,)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)/\\Z']
+[2022-01-20 22:57:07,113] [ERROR] "GET /list/4/1/ HTTP/1.1" 500 228617
+[2022-01-20 22:57:38,425] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 81, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(1,)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:57:38,426] [ERROR] "GET /list/6/1 HTTP/1.1" 500 228589
+[2022-01-20 22:59:17,220] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:17,222] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:18,185] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:18,186] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:18,993] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:18,993] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:20,139] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:20,140] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:21,565] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:21,566] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:22,658] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:22,659] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:25,185] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:25,187] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230273
+[2022-01-20 22:59:30,152] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 22:59:30,153] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230136
+[2022-01-20 23:01:40,648] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:01:40,648] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230315
+[2022-01-20 23:01:41,679] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:01:41,680] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230315
+[2022-01-20 23:02:01,080] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:02:01,081] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230336
+[2022-01-20 23:02:02,185] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 85, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:02:02,186] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230336
+[2022-01-20 23:02:58,118] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 86, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:02:58,120] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230929
+[2022-01-20 23:02:59,299] [ERROR] Internal Server Error: /list/6/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 86, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '('', 1)' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:02:59,300] [ERROR] "GET /list/6/1 HTTP/1.1" 500 230929
+[2022-01-20 23:05:04,319] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(4, '')' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:05:04,320] [ERROR] "GET / HTTP/1.1" 500 230966
+[2022-01-20 23:05:06,658] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(4, '')' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:05:06,658] [ERROR] "GET / HTTP/1.1" 500 231103
+[2022-01-20 23:06:52,462] [ERROR] Internal Server Error: /list/3/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 86, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(3, '')' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:06:52,463] [ERROR] "GET /list/3/1 HTTP/1.1" 500 219900
+[2022-01-20 23:06:53,847] [ERROR] Internal Server Error: /list/3/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 86, in get
+    return render(request, 'list.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 295, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list' with arguments '(3, '')' not found. 1 pattern(s) tried: ['list/(?P<goods_type_id>[0-9]+)/(?P<page>[0-9]+)\\Z']
+[2022-01-20 23:06:53,848] [ERROR] "GET /list/3/1 HTTP/1.1" 500 219900
+[2022-01-20 23:20:25,116] [ERROR] Internal Server Error: /cart/cart
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 35, in get
+    return render(request, 'cart.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 130, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 127, in get_parent
+    return self.find_template(parent, context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 106, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 509, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 526, in extend_nodelist
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'base.html'> must be the first tag in the template.
+[2022-01-20 23:20:25,118] [ERROR] "GET /cart/cart HTTP/1.1" 500 168025

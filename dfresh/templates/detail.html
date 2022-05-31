@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}天天生鲜-商品详情{% endblock title %}
+
+{% block top_js %}{% endblock top_js %}
+
+
+
+{% block body %}
+	<div class="navbar_con">
+		<div class="navbar clearfix">
+			<div class="subnav_con fl">
+				<h1>全部商品分类</h1>	
+				<span></span>			
+{#				<ul class="subnav">#}
+{#					<li><a href="#" class="fruit">新鲜水果</a></li>#}
+{#					<li><a href="#" class="seafood">海鲜水产</a></li>#}
+{#					<li><a href="#" class="meet">猪牛羊肉</a></li>#}
+{#					<li><a href="#" class="egg">禽类蛋品</a></li>#}
+{#					<li><a href="#" class="vegetables">新鲜蔬菜</a></li>#}
+{#					<li><a href="#" class="ice">速冻食品</a></li>#}
+{#				</ul>#}
+			</div>
+			<ul class="navlist fl">
+				<li><a href="{% url 'goods:index' %}">首页</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="breadcrumb">
+		<a href="#">全部分类</a>
+		<span>></span>
+		<a href="#">{{ goods.type.name }}</a>
+		<span>></span>
+		<a href="#">商品详情</a>
+	</div>
+
+	<div class="goods_detail_con clearfix">
+		<div class="goods_detail_pic fl"><img src="{{goods.image.url}}"></div>
+
+		<div class="goods_detail_list fr">
+            <h3 id="goods_id" style="display: none">{{ goods.id }}</h3>
+			<h3 id="goods_name">{{ goods.name }}</h3>
+			<p>{{ goods.desc}}</p>
+			<div class="prize_bar">
+				<span class="show_pirze">¥<em>{{ goods.price }}</em></span>
+				<span class="show_unit">单  位：{{ goods.unite }}</span>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name fl" id="goods_count">数 量：{{ goods.stock }}</div>
+				<div class="num_add fl">
+					<input type="text" class="num_show fl" value="1">
+					<a href="javascript:;" class="add fr">+</a>
+					<a href="javascript:;" class="minus fr">-</a>
+
+				</div>
+                 <div class="pagenation">
+                <p>其他规格:</p>
+                <ul style="list-style: none">
+                    {% for goods_tj in goods_list %}
+                        {% if goods.id == goods_tj.id %}
+                        <li style="display: inline"><a href="{% url 'goods:detail' goods_tj.id %}" class="active">{{ goods_tj.name }}</a></li>
+                        {% else %}
+                        <li style="display: inline"><a href="{% url 'goods:detail' goods_tj.id %}">{{ goods_tj.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+			</div>
+
+			<div class="total">总价：<em></em></div>
+
+			<div class="operate_btn">
+{#				<a href="javascript:;" class="buy_btn">立即购买</a>#}
+				<a href="" class="buy_btn">立即购买</a>
+				<a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+                    {% for show_goods in show_goods_list %}
+					<li>
+						<a href="{% url 'goods:detail' show_goods.id %}"><img src="{{ show_goods.image.url }}"></a>
+						<h4><a href="{% url 'goods:detail' show_goods.id %}">{{ show_goods.name }}</a></h4>
+						￥<div class="prize">{{ show_goods.price }}</div>
+					</li>
+                    {% endfor %}
+{#					<li>#}
+{#						<a href="#"><img src="../static/images/goods/goods002.jpg"></a>#}
+{#						<h4><a href="#">玫瑰香葡萄</a></h4>#}
+{#						<div class="prize">￥16.80</div>#}
+{#					</li>#}
+				</ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<ul class="detail_tab clearfix">
+				<li class="active" id="tag_detail">商品介绍</li>
+				<li id="tag_comment" >评论</li>
+			</ul>
+
+			<div class="tab_content" id="tab_detail">
+				<dl>
+					<dt>商品详情：</dt>
+                    <dd>{{ goods.goods.detail }}</dd>
+                </dl>
+			</div>
+
+             <div class="tab_content" id="tab_comment" style="display: none;">
+
+                 <dl>
+                    {% for comment in comments %}
+                        <dt>评论时间: {{ comment.update_time }} 用户名:{{ comment.order.user.username }}</dt>
+                        <dd>评论内容: {{ comment.comment }}</dd>
+                    {% empty %}
+                        暂时没有评论信息
+                    {% endfor %}
+                 </dl>
+             </div>
+
+		</div>
+	</div>
+{% endblock body %}
+
+{% block buttom_info %}
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
+		<p>电话：010-****888    京ICP备*******8号</p>
+	</div>
+	<div class="add_jump"></div>
+{% endblock buttom_info %}
+{% block buttom_js %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/detail.js' %}"></script>
+{% endblock buttom_js %}

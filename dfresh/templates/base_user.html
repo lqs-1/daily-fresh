@@ -1,0 +1,41 @@
+{% extends 'base_order.html' %}
+
+{% load static %}
+
+{% block title %}天天生鲜-用户中心{% endblock title %}
+
+{% block order_title %}用户中心{% endblock order_title %}
+
+    {% block body %}
+        <div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>用户中心</h3>
+			<ul>
+				<li><a href="{% url 'user:user' 1%}" {% if active == 'user' %} class="active" {% endif %}>· 个人信息</a></li>
+				<li><a href="{% url 'user:order' 1%}" {% if active == 'order'%} class="active" {% endif %}>· 全部订单</a></li>
+				<li><a href="{% url 'user:address' %}" {% if active == 'address' %} class="active" {% endif %}>· 收货地址</a></li>
+			</ul>
+		</div>
+        {% block right %}{% endblock right %}
+	</div>
+
+
+    {% endblock body %}
+
+    {% block buttom_info %}
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
+		<p>电话：010-****888    京ICP备*******8号</p>
+	</div>
+    {% endblock buttom_info %}
+
+    {% block buttom_js %}{% endblock buttom_js %}

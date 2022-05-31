@@ -1,0 +1,54 @@
+{% extends 'base_user.html' %}
+
+{% block right %}
+		<div class="right_content clearfix">
+				<h3 class="common_title2">收货地址</h3>
+				<div class="site_con">
+					<dl>
+                        {% if address_default is None %}
+                        {% else %}
+						<dt>当前地址：</dt>
+                            <dd> {{ address_default.addr}} （{{ address_default.receiver }} 收） {{ address_default.phone}}</dd>
+
+                             {% if not address %}
+                             {% else %}
+                             <dt>地址列表：</dt>
+                             <form method="post" action="/user/alteraddr">
+                             {% csrf_token %}
+                                 {% for addr in address %}
+                                <dd><input type="radio" name="address" value={{ addr.id }}>  {{ addr.addr}} （{{ addr.receiver }} 收） {{ addr.phone}}</dd>
+                                 {% endfor %}
+                                  <center><input type="submit" value="设为默认"></center>
+                                 </form>
+                             {% endif %}
+
+                        {% endif %}
+					</dl>
+				</div>
+				<h3 class="common_title2">编辑地址</h3>
+				<div class="site_con">
+					<form action="http://127.0.0.1:8000/user/address" method="post">
+                        {% csrf_token %}
+						<div class="form_group">
+							<label>收件人：</label>
+							<input type="text" name="receiver">
+						</div>
+						<div class="form_group form_group2">
+							<label>详细地址：</label>
+							<textarea class="site_area" name="addr"></textarea>
+						</div>
+						<div class="form_group">
+							<label>邮编：</label>
+							<input type="text" name="postid">
+						</div>
+						<div class="form_group">
+							<label>手机：</label>
+							<input type="text" name="phone">
+						</div>
+
+						<input type="submit" name="" value="提交" class="info_submit">
+					</form>
+				</div>
+		</div>
+{% endblock right %}
+

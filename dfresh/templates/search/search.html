@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% block title %}天天生鲜-商品列表{% endblock title %}
+
+{% block top_js %}{% endblock top_js %}
+{% block body %}
+	<div class="navbar_con">
+		<div class="navbar clearfix">
+			<div class="subnav_con fl">
+				<h1>{{ query }}</h1>
+				<span></span>			
+{#				<ul class="subnav">#}
+{#					<li><a href="#" class="fruit">新鲜水果</a></li>#}
+{#					<li><a href="#" class="seafood">海鲜水产</a></li>#}
+{#					<li><a href="#" class="meet">猪牛羊肉</a></li>#}
+{#					<li><a href="#" class="egg">禽类蛋品</a></li>#}
+{#					<li><a href="#" class="vegetables">新鲜蔬菜</a></li>#}
+{#					<li><a href="#" class="ice">速冻食品</a></li>#}
+{#				</ul>#}
+			</div>
+			<ul class="navlist fl">
+				<li><a href="{% url 'goods:index' %}">首页</a></li>
+{#				<li class="interval">|</li>#}
+{#				<li><a href="">手机生鲜</a></li>#}
+{#				<li class="interval">|</li>#}
+{#				<li><a href="">抽奖</a></li>#}
+			</ul>
+		</div>
+	</div>
+
+	<div class="breadcrumb">
+		<a href="">搜索结果如下</a>
+	</div>
+
+	<div class="main_wrap clearfix">
+{#		<div class="l_wrap fl clearfix">#}
+{#			<div class="new_goods">#}
+{#				<h3>新品推荐</h3>#}
+{#				<ul>#}
+{#                    {% for goods in goods_list_tj %}#}
+{#					<li>#}
+{#						<a href="{% url 'goods:detail' goods.id %}"><img src="{{goods.image.url}}"></a>#}
+{#						<h4><a href="{% url 'goods:detail' goods.id %}">{{ goods.name }}</a></h4>#}
+{#						<div class="prize">￥{{ goods.price }}</div>#}
+{#					</li>#}
+{#                    {% endfor %}#}
+{#					<li>#}
+{#						<a href="#"><img src="../static/images/goods/goods002.jpg"></a>#}
+{#						<h4><a href="#">玫瑰香葡萄</a></h4>#}
+{#						<div class="prize">￥16.80</div>#}
+{#					</li>#}
+{#				</ul>#}
+{#			</div>#}
+{#		</div>#}
+
+
+			<ul class="goods_type_list clearfix">
+                {% for item in page %}
+				<li>
+					<a href="{% url 'goods:detail' item.object.id %}"><img src="{{item.object.image.url}}"></a>
+					<h4><a href="{% url 'goods:detail' item.object.id %}">{{ item.object.name }}</a></h4>
+					<div class="operate">
+						<span class="prize">￥{{ item.object.price }}</span>
+						<span class="unit">{{ item.object.price }}/{{ item.object.unite }}</span>
+					</div>
+				</li>
+                {% endfor %}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods004.jpg"></a>#}
+{#					<h4><a href="#">吐鲁番梨光杏</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥5.50</span>#}
+{#						<span class="unit">5.50/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods005.jpg"></a>#}
+{#					<h4><a href="#">黄肉桃</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥10.00</span>#}
+{#						<span class="unit">10.00/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods006.jpg"></a>#}
+{#					<h4><a href="#">进口西梅</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥28.80</span>#}
+{#						<span class="unit">28.8/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods007.jpg"></a>#}
+{#					<h4><a href="#">香梨</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥6.45</span>#}
+{#						<span class="unit">6.45/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods008.jpg"></a>#}
+{#					<h4><a href="#">栗子</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥9.50</span>#}
+{#						<span class="unit">9.50/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods009.jpg"></a>#}
+{#					<h4><a href="#">海南香蕉</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥3.30</span>#}
+{#						<span class="unit">3.30/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods010.jpg"></a>#}
+{#					<h4><a href="#">青苹果</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥5.00</span>#}
+{#						<span class="unit">5.00/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods011.jpg"></a>#}
+{#					<h4><a href="#">山莓</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥28.80</span>#}
+{#						<span class="unit">28.8/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{##}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods012.jpg"></a>#}
+{#					<h4><a href="#">奇异果</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥25.80</span>#}
+{#						<span class="unit">25.8/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods013.jpg"></a>#}
+{#					<h4><a href="#">蜜桔</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥4.80</span>#}
+{#						<span class="unit">4.8/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods014.jpg"></a>#}
+{#					<h4><a href="#">脐橙</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥3.50</span>#}
+{#						<span class="unit">3.50/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods001.jpg"></a>#}
+{#					<h4><a href="#">进口柠檬</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥3.90</span>#}
+{#						<span class="unit">3.90/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+{#				<li>#}
+{#					<a href="#"><img src="../static/images/goods/goods002.jpg"></a>#}
+{#					<h4><a href="#">玫瑰香葡萄</a></h4>#}
+{#					<div class="operate">#}
+{#						<span class="prize">￥16.80</span>#}
+{#						<span class="unit">16.80/500g</span>#}
+{#						<a href="#" class="add_goods" title="加入购物车"></a>#}
+{#					</div>#}
+{#				</li>#}
+			</ul>
+
+			<div class="pagenation">
+                {% if page.has_previous %}
+				<a href="/search?q={{ query }}&page={{ page.previous_page_number }}">上一页</a>
+            {% endif %}
+                {% for pindex in paginator.page_range %}
+                    {% if pindex == page.number %}
+                        <a href="/search?q={{ query }}&page={{ pindex }}" class="active">{{ pindex }}</a>
+                    {% else%}
+                    <a href="/search?q={{ query }}&page={{ pindex }}">{{ pindex }}</a>
+                    {% endif %}
+                {% endfor %}
+{#				<a href="#" class="active">1</a>#}
+{#				<a href="#">2</a>#}
+{#				<a href="#">3</a>#}
+{#				<a href="#">4</a>#}
+{#				<a href="#">5</a>#}
+            {% if page.has_next %}
+				<a href="/search?q={{ query }}&page={{ page.next_page_number }}">下一页></a>
+            {% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock body %}
+{% block buttom_info %}
+	<div class="footer">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
+		<p>电话：010-****888    京ICP备*******8号</p>
+	</div>
+{% endblock buttom_info %}
+{% block buttom_js %}{% endblock buttom_js %}

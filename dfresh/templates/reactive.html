@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}天天生鲜-激活获取{% endblock title %}
+{% block top_js %}{% endblock top_js %}
+
+{% block head_info %}{% endblock head_info %}
+
+{% block search_bar %}{% endblock search_bar %}
+
+{% block body %}
+	<div class="login_top clearfix">
+		<a href="index.html" class="login_logo"><img src="../static/images/logo02.png"></a>
+	</div>
+
+	<div class="login_form_bg">
+		<div class="login_form_wrap clearfix">
+			<div class="login_banner fl"></div>
+			<div class="slogan fl">获取激活链接</div>
+			<div class="login_form fr">
+				<div class="login_title clearfix">
+					<a href="#">立即注册</a>
+				</div>
+				<div class="form_input">
+					<form method="post">
+                        {% csrf_token %}
+						<input type="text" name="username" class="name_input" placeholder="请输入用户名">
+						<input type="submit" name="" value="获取" class="input_submit">
+					</form>
+				</div>
+                {{ errmsg }}
+			</div>
+		</div>
+	</div>
+{% endblock body %}
+{% block buttom_info %}
+	<div class="footer no-mp">
+		<div class="foot_link">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">招聘人才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>		
+		</div>
+		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
+		<p>电话：010-****888    京ICP备*******8号</p>
+	</div>
+{% endblock buttom_info %}
+
+{% block buttom_js %}{% endblock buttom_js %}

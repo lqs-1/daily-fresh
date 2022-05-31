@@ -1,0 +1,295 @@
+[2022-01-12 13:19:35,151] [ERROR] User matching query does not exist.
+[2022-01-12 14:05:46,914] [ERROR] User matching query does not exist.
+[2022-01-12 14:06:40,463] [ERROR] Internal Server Error: /user/reactive
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.user.views.UserActiveGetView didn't return an HttpResponse object. It returned None instead.
+[2022-01-12 14:06:40,464] [ERROR] "GET /user/reactive HTTP/1.1" 500 68427
+[2022-01-12 14:07:04,255] [ERROR] Internal Server Error: /user/reactive
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.user.views.UserActiveGetView didn't return an HttpResponse object. It returned None instead.
+[2022-01-12 14:07:04,256] [ERROR] "GET /user/reactive HTTP/1.1" 500 68564
+[2022-01-12 14:07:36,394] [ERROR] User matching query does not exist.,liqisong不存在
+[2022-01-12 14:07:36,431] [ERROR] Internal Server Error: /user/reactive
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 93, in post
+    token = ter.dumps({'user_id': user.id}).decode('utf-8')
+UnboundLocalError: local variable 'user' referenced before assignment
+[2022-01-12 14:07:36,432] [ERROR] "POST /user/reactive HTTP/1.1" 500 78645
+[2022-01-12 14:08:04,735] [ERROR] User matching query does not exist.,liqisong不存在
+[2022-01-12 14:08:04,778] [ERROR] Internal Server Error: /user/reactive
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 94, in post
+    token = ter.dumps({'user_id': user.id}).decode('utf-8')
+NameError: name 'user' is not defined
+[2022-01-12 14:08:04,779] [ERROR] "POST /user/reactive HTTP/1.1" 500 78501
+[2022-01-12 14:08:49,220] [ERROR] User matching query does not exist.,liqisong不存在
+[2022-01-12 14:09:47,430] [ERROR] User matching query does not exist.,liqisong不存在
+[2022-01-12 14:11:23,638] [ERROR] 'NoneType' object has no attribute 'id',liqisong不存在
+[2022-01-12 14:12:08,280] [ERROR] 'NoneType' object has no attribute 'id',liqisong不存在
+[2022-01-12 14:13:22,476] [ERROR] User matching query does not exist.
+[2022-01-12 14:15:14,582] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 135, in post
+    login(user)
+TypeError: login() missing 1 required positional argument: 'user'
+[2022-01-12 14:15:14,583] [ERROR] "POST /user/login HTTP/1.1" 500 78822
+[2022-01-12 14:16:52,772] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 136, in post
+    login(user)
+TypeError: login() missing 1 required positional argument: 'user'
+[2022-01-12 14:16:52,772] [ERROR] "POST /user/login HTTP/1.1" 500 78860
+[2022-01-12 14:17:04,153] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 136, in post
+    login(user)
+TypeError: login() missing 1 required positional argument: 'user'
+[2022-01-12 14:17:04,153] [ERROR] "POST /user/login HTTP/1.1" 500 78860
+[2022-01-12 14:23:11,894] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'elif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 7, in get
+    return render(request, 'index.html')
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 979, in do_if
+    nodelist = parser.parse(('endif',))
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 29: 'elif', expected 'endif'. Did you forget to register or load this tag?
+[2022-01-12 14:23:11,896] [ERROR] "GET / HTTP/1.1" 500 163244
+[2022-01-12 14:26:29,434] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 7, in get
+    return render(request, 'index.html')
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'loguot' not found. 'loguot' is not a valid view function or pattern name.
+[2022-01-12 14:26:29,435] [ERROR] "GET / HTTP/1.1" 500 140808
+[2022-01-12 14:26:36,725] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 7, in get
+    return render(request, 'index.html')
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'loguot' not found. 'loguot' is not a valid view function or pattern name.
+[2022-01-12 14:26:36,726] [ERROR] "GET / HTTP/1.1" 500 140969
+[2022-01-12 14:46:31,266] [ERROR] User matching query does not exist.
+[2022-01-12 14:56:08,180] [ERROR] User matching query does not exist.
+[2022-01-12 14:56:14,750] [ERROR] Internal Server Error: /user/active/eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0MTk5ODY2OSwiZXhwIjoxNjQxOTk4OTY5fQ.eyJ1c2VyX2lkIjoyN30.p7YY-vWu49QCRYXsOlbmXaJ6Kvzn0-s7tGLEwwXn08TSLjvPrcOha16o19_vy6cAU09YN43fp2m_ZXw9zVZzNw
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 65, in get
+    info = ter.loads(token)
+  File "/home/lqs/.local/lib/python3.8/site-packages/itsdangerous/jws.py", line 233, in loads
+    raise SignatureExpired(
+itsdangerous.exc.SignatureExpired: Signature expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 72, in get
+    logger.error(f'{e}，{user_id}用户激活链接失效')
+UnboundLocalError: local variable 'user_id' referenced before assignment
+[2022-01-12 14:56:14,751] [ERROR] "GET /user/active/eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0MTk5ODY2OSwiZXhwIjoxNjQxOTk4OTY5fQ.eyJ1c2VyX2lkIjoyN30.p7YY-vWu49QCRYXsOlbmXaJ6Kvzn0-s7tGLEwwXn08TSLjvPrcOha16o19_vy6cAU09YN43fp2m_ZXw9zVZzNw HTTP/1.1" 500 90457
+[2022-01-12 14:57:15,460] [ERROR] Internal Server Error: /user/active/eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0MTk5ODY2OSwiZXhwIjoxNjQxOTk4OTY5fQ.eyJ1c2VyX2lkIjoyN30.p7YY-vWu49QCRYXsOlbmXaJ6Kvzn0-s7tGLEwwXn08TSLjvPrcOha16o19_vy6cAU09YN43fp2m_ZXw9zVZzNw
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 65, in get
+    info = ter.loads(token)
+  File "/home/lqs/.local/lib/python3.8/site-packages/itsdangerous/jws.py", line 233, in loads
+    raise SignatureExpired(
+itsdangerous.exc.SignatureExpired: Signature expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 72, in get
+    logger.error(f'{e}，{user.id}用户激活链接失效')
+UnboundLocalError: local variable 'user' referenced before assignment
+[2022-01-12 14:57:15,460] [ERROR] "GET /user/active/eyJhbGciOiJIUzUxMiIsImlhdCI6MTY0MTk5ODY2OSwiZXhwIjoxNjQxOTk4OTY5fQ.eyJ1c2VyX2lkIjoyN30.p7YY-vWu49QCRYXsOlbmXaJ6Kvzn0-s7tGLEwwXn08TSLjvPrcOha16o19_vy6cAU09YN43fp2m_ZXw9zVZzNw HTTP/1.1" 500 90445
+[2022-01-12 14:58:40,194] [ERROR] User matching query does not exist.
+[2022-01-12 15:11:26,811] [ERROR] Internal Server Error: /user/reactive
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 87, in post
+    user = User.objects.get(username=username, password=password)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+apps.user.models.User.DoesNotExist: User matching query does not exist.
+[2022-01-12 15:11:26,812] [ERROR] "POST /user/reactive HTTP/1.1" 500 88144

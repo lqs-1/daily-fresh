@@ -1,0 +1,1393 @@
+[2022-01-21 12:49:37,879] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 13:15:51,712] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 13:17:37,091] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 13:18:46,598] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 13:18:47,367] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 13:32:55,988] [ERROR] Internal Server Error: /user/address
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 268, in post
+    return render(request, 'user_center_site', {'active': 'address', 'address': address})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_center_site
+[2022-01-21 13:32:55,990] [ERROR] "POST /user/address HTTP/1.1" 500 100187
+[2022-01-21 13:37:04,827] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-21 14:50:14,243] [ERROR] OrderInfo() got an unexpected keyword argument 'transaction', lqs的订单保存失败
+[2022-01-21 14:50:16,113] [ERROR] OrderInfo() got an unexpected keyword argument 'transaction', lqs的订单保存失败
+[2022-01-21 14:50:25,281] [ERROR] OrderInfo() got an unexpected keyword argument 'transaction', lqs的订单保存失败
+[2022-01-21 14:51:23,489] [ERROR] OrderInfo() got an unexpected keyword argument 'transaction', lqs的订单保存失败
+[2022-01-21 14:53:28,740] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 14:58:20,597] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 14:59:19,180] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 14:59:45,057] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:00:07,644] [ERROR] id() takes exactly one argument (0 given), lqs的订单保存失败
+[2022-01-21 15:00:58,630] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:01:55,130] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 81, in post
+    out_trade_no=order_info.order_id,  # 订单编号
+NameError: name 'order_info' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 88, in post
+    logger(f'{e}, {request.user.username}支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 15:01:55,131] [ERROR] "POST /order/pay HTTP/1.1" 500 91138
+[2022-01-21 15:11:58,996] [ERROR] (1062, "Duplicate entry '1' for key 'df_order_info.PRIMARY'"), lqs的订单保存失败
+[2022-01-21 15:12:00,676] [ERROR] (1062, "Duplicate entry '1' for key 'df_order_info.PRIMARY'"), lqs的订单保存失败
+[2022-01-21 15:13:18,688] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:13:20,971] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:13:52,008] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:13:54,681] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:14:10,901] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:14:33,773] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:15:45,546] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:15:58,671] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:17:22,963] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:21:50,496] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:22:15,207] [ERROR] OrderInfo() got an unexpected keyword argument 'id', lqs的订单保存失败
+[2022-01-21 15:24:51,603] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:25:17,026] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:25:54,693] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:26:30,949] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:27:01,999] [ERROR] (1048, "Column 'order_id' cannot be null"), lqs的订单保存失败
+[2022-01-21 15:28:35,291] [ERROR] 'UUID' object has no attribute 'get_hex', lqs的订单保存失败
+[2022-01-21 15:28:37,630] [ERROR] 'UUID' object has no attribute 'get_hex', lqs的订单保存失败
+[2022-01-21 15:29:20,358] [ERROR] Field 'order_id' expected a number but got 'd9214fee7a8b11ec86601d3327890f77'., lqs的订单保存失败
+[2022-01-21 15:42:35,541] [ERROR] Internal Server Error: /admin/order/orderinfo/faaf1d127a8b11ec86601d3327890f77/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+[2022-01-21 15:42:35,542] [ERROR] "GET /admin/order/orderinfo/faaf1d127a8b11ec86601d3327890f77/change/ HTTP/1.1" 500 112858
+[2022-01-21 15:44:11,359] [ERROR] Internal Server Error: /admin/order/ordergoods/2/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-21 15:44:11,360] [ERROR] "GET /admin/order/ordergoods/2/change/ HTTP/1.1" 500 111627
+[2022-01-21 16:09:26,409] [ERROR] Internal Server Error: /user/order
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 248, in get
+    return render(request, 'user_center_order.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 170, in render
+    values = list(values)
+TypeError: 'RelatedManager' object is not iterable
+[2022-01-21 16:09:26,412] [ERROR] "GET /user/order HTTP/1.1" 500 264933
+[2022-01-21 16:19:24,560] [ERROR] Internal Server Error: /user/order
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 799, in __init__
+    self.literal = float(var)
+ValueError: could not convert string to float: 'order.order_status.__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 815, in __init__
+    self.literal = mark_safe(unescape_string_literal(var))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/functional.py", line 230, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/text.py", line 379, in unescape_string_literal
+    raise ValueError("Not a string literal: %r" % s)
+ValueError: Not a string literal: 'order.order_status.__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 250, in get
+    return render(request, 'user_center_order.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 479, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 477, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 593, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 678, in __init__
+    var_obj = Variable(var)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 820, in __init__
+    raise TemplateSyntaxError("Variables and attributes may "
+django.template.exceptions.TemplateSyntaxError: Variables and attributes may not begin with underscores: 'order.order_status.__str__'
+[2022-01-21 16:19:24,562] [ERROR] "GET /user/order HTTP/1.1" 500 289235
+[2022-01-21 17:45:55,302] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-21 17:46:49,913] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-21 17:46:56,402] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-21 17:46:59,450] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-21 17:47:07,571] [ERROR] GoodsCart matching query does not exist., 删除购物车商品失败，数据库链接失败
+[2022-01-21 20:04:27,406] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view apps.order.views.view didn't return an HttpResponse object. It returned None instead.
+[2022-01-21 20:04:27,407] [ERROR] "POST /order/cartpay HTTP/1.1" 500 70755
+[2022-01-21 20:16:44,769] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 33, in get
+    goods = GoodsSKU.objects.get(name=goods_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-01-21 20:16:44,770] [ERROR] "GET /order/pay HTTP/1.1" 500 93437
+[2022-01-21 20:27:33,296] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'cart_goods.price*cart_goods.count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 125, in post
+    return render(request, 'place_cart_order.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 58: 'cart_goods.price*cart_goods.count', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[2022-01-21 20:27:33,297] [ERROR] "POST /order/cartpay HTTP/1.1" 500 248981
+[2022-01-21 20:34:34,019] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 127, in get
+    return render(request, 'place_cart_order.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+[2022-01-21 20:34:34,021] [ERROR] "GET /order/cartpay?csrfmiddlewaretoken=xPyrICZeCl8ONkXagysGsE4x3gUbXLYI90RxoUrIMDOZa6CvGxGRLzaUtnFRMuUN&goods_id=10 HTTP/1.1" 500 223966
+[2022-01-21 21:17:59,949] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 192, in post
+    subject='天天生鲜' + order_info.user,  # 订单主题
+TypeError: can only concatenate str (not "SimpleLazyObject") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 197, in post
+    logger(f'{e}, {request.user.username}支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 21:17:59,950] [ERROR] "POST /order/cartpay HTTP/1.1" 500 93980
+[2022-01-21 21:19:12,522] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 189, in post
+    pay_string = alipay.gen_alipay_client().api_alipay_trade_page_pay(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 269, in api_alipay_trade_page_pay
+    return self.sign_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 197, in post
+    logger(f'{e}, {request.user.username}支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 21:19:12,524] [ERROR] "POST /order/cartpay HTTP/1.1" 500 128444
+[2022-01-21 21:19:24,401] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 189, in post
+    pay_string = alipay.gen_alipay_client().api_alipay_trade_page_pay(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 269, in api_alipay_trade_page_pay
+    return self.sign_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 197, in post
+    logger(f'{e}, {request.user.username}支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 21:19:24,401] [ERROR] "POST /order/cartpay HTTP/1.1" 500 128444
+[2022-01-21 21:19:56,295] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 189, in post
+    pay_string = alipay.gen_alipay_client().api_alipay_trade_page_pay(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 269, in api_alipay_trade_page_pay
+    return self.sign_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 197, in post
+    logger(f'{e}, 支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 21:19:56,297] [ERROR] "POST /order/cartpay HTTP/1.1" 500 128398
+[2022-01-21 21:22:05,633] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 189, in post
+    pay_string = alipay.gen_alipay_client().api_alipay_trade_page_pay(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 269, in api_alipay_trade_page_pay
+    return self.sign_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+[2022-01-21 21:22:05,635] [ERROR] "POST /order/cartpay HTTP/1.1" 500 121735
+[2022-01-21 21:24:34,180] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 189, in post
+    pay_string = alipay.gen_alipay_client().api_alipay_trade_page_pay(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 269, in api_alipay_trade_page_pay
+    return self.sign_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 171, in sign_data
+    ordered_items = self._ordered_data(data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/alipay/__init__.py", line 136, in _ordered_data
+    data[k] = json.dumps(v, separators=(',', ':'))
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 197, in post
+    logger(f'{e}, {request.user.username}支付失败')
+TypeError: 'Logger' object is not callable
+[2022-01-21 21:24:34,182] [ERROR] "POST /order/cartpay HTTP/1.1" 500 128821
+[2022-01-21 21:25:19,615] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:27:29,159] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:27:41,217] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:28:24,984] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:29:56,918] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:30:13,112] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:30:27,665] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:30:48,949] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:33:27,333] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:35:38,576] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:36:04,933] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:37:29,130] [ERROR] Object of type Decimal is not JSON serializable, lqs支付失败
+[2022-01-21 21:46:56,966] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 53, in get
+    return render(request, 'detail.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:46:56,968] [ERROR] "GET /detail/26 HTTP/1.1" 500 192401
+[2022-01-21 21:47:50,180] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 53, in get
+    return render(request, 'detail.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:47:50,181] [ERROR] "GET /detail/26 HTTP/1.1" 500 192401
+[2022-01-21 21:48:08,919] [ERROR] Internal Server Error: /cart/cart
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 35, in get
+    return render(request, 'cart.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:48:08,920] [ERROR] "GET /cart/cart HTTP/1.1" 500 218828
+[2022-01-21 21:48:26,738] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:48:26,739] [ERROR] "GET / HTTP/1.1" 500 209490
+[2022-01-21 21:48:28,118] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:48:28,118] [ERROR] "GET / HTTP/1.1" 500 209490
+[2022-01-21 21:48:29,453] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order' with no arguments not found. 1 pattern(s) tried: ['user/order/(?P<page>[0-9]+)\\Z']
+[2022-01-21 21:48:29,453] [ERROR] "GET / HTTP/1.1" 500 209490
+[2022-01-21 21:48:34,568] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 116, in get
+    cart_goods = GoodsCart.objects.get(goods_id=goods_id, user=request.user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.cart.models.GoodsCart.DoesNotExist: GoodsCart matching query does not exist.
+[2022-01-21 21:48:34,569] [ERROR] "GET /order/cartpay?csrfmiddlewaretoken=eOD77iusXIaZ8R0iQPeMGYElgA3nz96nQZWdNAWW70QavDFDgOsXZTKIGHO3oS2s&goods_id=10&goods_id=3 HTTP/1.1" 500 95281
+[2022-01-21 21:50:40,719] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 116, in get
+    cart_goods = GoodsCart.objects.get(goods_id=goods_id, user=request.user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.cart.models.GoodsCart.DoesNotExist: GoodsCart matching query does not exist.
+[2022-01-21 21:50:40,720] [ERROR] "GET /order/cartpay?csrfmiddlewaretoken=kDvlccnBQExrXvorKVzj7YQrgsFHMKf6WOOrSuP50WdCkh3MaUNuqTWOGzqnBtbb&goods_id=10&goods_id=3 HTTP/1.1" 500 95281
+[2022-01-21 21:50:42,225] [ERROR] Internal Server Error: /order/cartpay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/order/views.py", line 116, in get
+    cart_goods = GoodsCart.objects.get(goods_id=goods_id, user=request.user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.cart.models.GoodsCart.DoesNotExist: GoodsCart matching query does not exist.
+[2022-01-21 21:50:42,226] [ERROR] "GET /order/cartpay?csrfmiddlewaretoken=kDvlccnBQExrXvorKVzj7YQrgsFHMKf6WOOrSuP50WdCkh3MaUNuqTWOGzqnBtbb&goods_id=10&goods_id=3 HTTP/1.1" 500 95281
+[2022-01-21 21:52:19,720] [ERROR] Internal Server Error: /cart/cart
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 35, in get
+    return render(request, 'cart.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with arguments '(1,)' not found. 1 pattern(s) tried: ['cart/cart\\Z']
+[2022-01-21 21:52:19,721] [ERROR] "GET /cart/cart HTTP/1.1" 500 218681
+[2022-01-21 21:53:15,467] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' with arguments '(1,)' not found. 1 pattern(s) tried: ['cart/cart\\Z']
+[2022-01-21 21:53:15,469] [ERROR] "GET / HTTP/1.1" 500 209345
+[2022-01-21 21:53:24,176] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' not found. 'cart' is not a valid view function or pattern name.
+[2022-01-21 21:53:24,177] [ERROR] "GET / HTTP/1.1" 500 207794
+[2022-01-21 21:54:21,457] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' not found. 'cart' is not a valid view function or pattern name.
+[2022-01-21 21:54:21,458] [ERROR] "GET / HTTP/1.1" 500 207813
+[2022-01-21 21:54:22,535] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 38, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cart' not found. 'cart' is not a valid view function or pattern name.
+[2022-01-21 21:54:22,536] [ERROR] "GET / HTTP/1.1" 500 207813
+[2022-01-21 22:02:05,905] [ERROR] Internal Server Error: /user/order/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 249, in get
+    order_info.previous_page_number()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/paginator.py", line 204, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/paginator.py", line 53, in validate_number
+    raise EmptyPage(_('That page number is less than 1'))
+django.core.paginator.EmptyPage: 页码小于 1
+[2022-01-21 22:02:05,906] [ERROR] "GET /user/order/1 HTTP/1.1" 500 91990
+[2022-01-21 22:02:08,352] [ERROR] Internal Server Error: /user/order/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 249, in get
+    order_info.previous_page_number()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/paginator.py", line 204, in previous_page_number
+    return self.paginator.validate_number(self.number - 1)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/paginator.py", line 53, in validate_number
+    raise EmptyPage(_('That page number is less than 1'))
+django.core.paginator.EmptyPage: 页码小于 1
+[2022-01-21 22:02:08,353] [ERROR] "GET /user/order/1 HTTP/1.1" 500 91990

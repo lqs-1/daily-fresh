@@ -1,0 +1,1202 @@
+[2022-01-13 01:32:23,100] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 133, in post
+    user = User.objects.get(username=username)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 187, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'user.User'
+[2022-01-13 01:32:23,101] [ERROR] "POST /user/login HTTP/1.1" 500 83531
+[2022-01-13 01:38:02,759] [ERROR] User matching query does not exist.
+[2022-01-13 01:39:10,677] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 141, in post
+    user = User.objects.get(username=username)
+NameError: name 'User' is not defined
+[2022-01-13 01:39:10,678] [ERROR] "POST /user/login HTTP/1.1" 500 79189
+[2022-01-13 01:40:22,756] [ERROR] User matching query does not exist.
+[2022-01-13 04:09:08,952] [ERROR] Internal Server Error: /user/order
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 176, in get
+    return render(request, 'user_conter_order.html')
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: user_conter_order.html
+[2022-01-13 04:09:08,953] [ERROR] "GET /user/order HTTP/1.1" 500 91721
+[2022-01-13 04:09:42,703] [ERROR] Internal Server Error: /user/order
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 130, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 127, in get_parent
+    return self.find_template(parent, context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 106, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 149, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 176, in get
+    return render(request, 'user_center_order.html')
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base_user
+[2022-01-13 04:09:42,704] [ERROR] "GET /user/order HTTP/1.1" 500 140784
+[2022-01-13 13:01:40,817] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/15/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:01:40,818] [ERROR] "GET /admin/goods/indextypegoodsbanner/15/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:01:51,684] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/25/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:01:51,684] [ERROR] "GET /admin/goods/indextypegoodsbanner/25/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:02:47,698] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/36/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:02:47,699] [ERROR] "GET /admin/goods/indextypegoodsbanner/36/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:02:52,534] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/5/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:02:52,534] [ERROR] "GET /admin/goods/indextypegoodsbanner/5/change/ HTTP/1.1" 500 110267
+[2022-01-13 13:03:18,490] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/5/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:18,491] [ERROR] "GET /admin/goods/indextypegoodsbanner/5/change/ HTTP/1.1" 500 110404
+[2022-01-13 13:03:19,285] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/5/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:19,285] [ERROR] "GET /admin/goods/indextypegoodsbanner/5/change/ HTTP/1.1" 500 110404
+[2022-01-13 13:03:23,146] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/15/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:23,146] [ERROR] "GET /admin/goods/indextypegoodsbanner/15/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:03:38,413] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/15/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:38,415] [ERROR] "GET /admin/goods/indextypegoodsbanner/15/change/ HTTP/1.1" 500 110432
+[2022-01-13 13:03:39,171] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/15/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:39,171] [ERROR] "GET /admin/goods/indextypegoodsbanner/15/change/ HTTP/1.1" 500 110432
+[2022-01-13 13:03:44,586] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/16/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:03:44,587] [ERROR] "GET /admin/goods/indextypegoodsbanner/16/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:05:18,383] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/1/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:05:18,384] [ERROR] "GET /admin/goods/indexgoodsbanner/1/change/ HTTP/1.1" 500 110069
+[2022-01-13 13:07:19,233] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/4/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:07:19,234] [ERROR] "GET /admin/goods/indexgoodsbanner/4/change/ HTTP/1.1" 500 110069
+[2022-01-13 13:07:37,173] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:07:37,173] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115036
+[2022-01-13 13:07:50,453] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:07:50,453] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115036
+[2022-01-13 13:08:09,996] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1736, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1417, in response_action
+    response = func(self, request, queryset)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 33, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1859, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 153, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 215, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 201, in _nested
+    ret = [format_callback(obj)]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 128, in format_callback
+    no_edit_link = '%s: %s' % (capfirst(opts.verbose_name), obj)
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:08:09,996] [ERROR] "POST /admin/goods/indexgoodsbanner/ HTTP/1.1" 500 133172
+[2022-01-13 13:09:02,197] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/1/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:09:02,197] [ERROR] "GET /admin/goods/indexgoodsbanner/1/change/ HTTP/1.1" 500 110069
+[2022-01-13 13:09:19,020] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:09:19,021] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115037
+[2022-01-13 13:17:43,465] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/35/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:17:43,466] [ERROR] "GET /admin/goods/indextypegoodsbanner/35/change/ HTTP/1.1" 500 110295
+[2022-01-13 13:18:10,812] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1736, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1417, in response_action
+    response = func(self, request, queryset)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/actions.py", line 33, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1859, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 153, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 215, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 201, in _nested
+    ret = [format_callback(obj)]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 128, in format_callback
+    no_edit_link = '%s: %s' % (capfirst(opts.verbose_name), obj)
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:18:10,812] [ERROR] "POST /admin/goods/indextypegoodsbanner/ HTTP/1.1" 500 134380
+[2022-01-13 13:23:28,836] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:23:28,837] [ERROR] "POST /admin/goods/indextypegoodsbanner/add/ HTTP/1.1" 500 115015
+[2022-01-13 13:23:36,144] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-13 13:23:36,145] [ERROR] "POST /admin/goods/indextypegoodsbanner/add/ HTTP/1.1" 500 115015
+[2022-01-13 13:24:44,072] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:24:44,072] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115036
+[2022-01-13 13:26:12,975] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:26:12,976] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115036
+[2022-01-13 13:27:48,309] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-13 13:27:48,310] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115036
+[2022-01-13 13:48:20,058] [ERROR] Internal Server Error: /user/user
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 170, in get
+    address = Address.objects.get_default_address(user)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/models.py", line 23, in get_default_address
+    address = self.model.objects.get(user=user, is_default=True)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 428, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 974, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 992, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 999, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1375, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1302, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1136, in check_related_objects
+    for v in value:
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/functional.py", line 249, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[2022-01-13 13:48:20,059] [ERROR] "GET /user/user HTTP/1.1" 500 130183
+[2022-01-13 13:49:06,277] [ERROR] User matching query does not exist.
+[2022-01-13 13:49:54,639] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:50:41,600] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:50:42,458] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:50:59,297] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:00,175] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:00,760] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:00,953] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:01,163] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:01,363] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:01,554] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:01,783] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 13:51:01,962] [ERROR] list index out of range, liqisong没有地址信息
+[2022-01-13 14:05:13,371] [ERROR] Internal Server Error: /user/alterpwd
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 182, in get
+    return render(request, 'alterpwd.html')
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: alterpwd.html
+[2022-01-13 14:05:13,372] [ERROR] "GET /user/alterpwd HTTP/1.1" 500 91701
+[2022-01-13 15:26:22,730] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'alterpwd' with no arguments not found. 1 pattern(s) tried: ['user/alterpwd/(?P<mig_id>[^/]+)\\Z']
+[2022-01-13 15:26:22,732] [ERROR] "GET /user/login HTTP/1.1" 500 184092
+[2022-01-13 15:44:52,758] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pwd' not found. 'pwd' is not a valid view function or pattern name.
+[2022-01-13 15:44:52,759] [ERROR] "GET /user/login HTTP/1.1" 500 182253
+[2022-01-13 15:44:57,409] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pwd' not found. 'pwd' is not a valid view function or pattern name.
+[2022-01-13 15:44:57,411] [ERROR] "GET /user/login HTTP/1.1" 500 182116
+[2022-01-13 15:45:21,831] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'alterpwd' with no arguments not found. 1 pattern(s) tried: ['user/alterpwd/(?P<mig_id>[^/]+)\\Z']
+[2022-01-13 15:45:21,832] [ERROR] "GET /user/login HTTP/1.1" 500 184229
+[2022-01-13 15:45:22,941] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'alterpwd' with no arguments not found. 1 pattern(s) tried: ['user/alterpwd/(?P<mig_id>[^/]+)\\Z']
+[2022-01-13 15:45:22,942] [ERROR] "GET /user/login HTTP/1.1" 500 184229
+[2022-01-13 15:45:24,649] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 132, in get
+    return render(request, 'login.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'alterpwd' with no arguments not found. 1 pattern(s) tried: ['user/alterpwd/(?P<mig_id>[^/]+)\\Z']
+[2022-01-13 15:45:24,650] [ERROR] "GET /user/login HTTP/1.1" 500 184229
+[2022-01-13 15:48:21,231] [ERROR] set_password() got an unexpected keyword argument 'password', 修改失败
+[2022-01-13 15:51:27,096] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 145, in post
+    user = User.objects.get(username=username)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.User.DoesNotExist: User matching query does not exist.
+[2022-01-13 15:51:27,097] [ERROR] "POST /user/login HTTP/1.1" 500 88112
+[2022-01-13 15:52:32,147] [ERROR] User matching query does not exist.
+[2022-01-13 15:52:32,187] [ERROR] Internal Server Error: /user/login
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 150, in post
+    if user.is_active == 0:
+UnboundLocalError: local variable 'user' referenced before assignment
+[2022-01-13 15:52:32,187] [ERROR] "POST /user/login HTTP/1.1" 500 79186
+[2022-01-13 15:53:57,483] [ERROR] Internal Server Error: /user/register
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 21, in get
+    cache.setex('hell', 12, 300)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/connection.py", line 15, in __getattr__
+    return getattr(self._connections[self._alias], item)
+AttributeError: 'RedisCache' object has no attribute 'setex'
+[2022-01-13 15:53:57,483] [ERROR] "GET /user/register HTTP/1.1" 500 81096

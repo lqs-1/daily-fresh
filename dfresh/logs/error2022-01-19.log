@@ -1,0 +1,1560 @@
+[2022-01-19 09:11:01,826] [ERROR] Internal Server Error: /user/user
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/views.py", line 222, in get
+    address = Address.objects.get_default_address(user)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/user/models.py", line 23, in get_default_address
+    address = self.model.objects.get(user=user, is_default=True)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 428, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 974, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 992, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 999, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1375, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1302, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1136, in check_related_objects
+    for v in value:
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/functional.py", line 249, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[2022-01-19 09:11:01,827] [ERROR] "GET /user/user HTTP/1.1" 500 130717
+[2022-01-19 09:17:18,239] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:22:22,662] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:24:06,870] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:24:19,998] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:24:22,464] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:26:16,055] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 09:53:03,589] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:53:03,590] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:53:47,949] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:53:47,951] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:53:53,488] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:53:53,489] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:54:06,119] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:54:06,120] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:54:25,672] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:54:25,672] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:54:38,492] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:54:38,493] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115495
+[2022-01-19 09:55:06,776] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:55:06,777] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115494
+[2022-01-19 09:59:22,726] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 09:59:22,726] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115666
+[2022-01-19 10:00:31,477] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 10:00:31,478] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115666
+[2022-01-19 10:04:18,358] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 10:04:18,359] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115666
+[2022-01-19 10:06:00,815] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 10:06:00,816] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115666
+[2022-01-19 10:06:09,427] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsSKU)
+[2022-01-19 10:06:09,428] [ERROR] "POST /admin/goods/indexgoodsbanner/add/ HTTP/1.1" 500 115666
+[2022-01-19 10:43:49,038] [ERROR] Internal Server Error: /admin/goods/indexgoodsbanner/13/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1645, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type int)
+[2022-01-19 10:43:49,039] [ERROR] "GET /admin/goods/indexgoodsbanner/13/change/ HTTP/1.1" 500 110729
+[2022-01-19 11:10:42,172] [ERROR] Internal Server Error: /admin/goods/goodsimage/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type ImageFieldFile)
+[2022-01-19 11:10:42,173] [ERROR] "POST /admin/goods/goodsimage/add/ HTTP/1.1" 500 115181
+[2022-01-19 13:16:15,294] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1822, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'type'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 17, in get
+    image_banners = IndexTypeGoodsBanner.objects.filter(type=type, display_type=1).order_by('index')
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 974, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 992, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 999, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1375, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1329, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1180, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 22, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 120, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1824, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <class 'type'>.
+[2022-01-19 13:16:15,296] [ERROR] "GET / HTTP/1.1" 500 137610
+[2022-01-19 13:25:08,473] [ERROR] Internal Server Error: /admin/goods/indextypegoodsbanner/add/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1670, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1603, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 822, in log_addition
+    object_repr=str(obj),
+TypeError: __str__ returned non-string (type GoodsType)
+[2022-01-19 13:25:08,474] [ERROR] "POST /admin/goods/indextypegoodsbanner/add/ HTTP/1.1" 500 115500
+[2022-01-19 15:09:06,406] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'goods_id'
+[2022-01-19 15:09:06,407] [ERROR] "GET /detail/26 HTTP/1.1" 500 74062
+[2022-01-19 15:20:19,403] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 500, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 40, in get
+    return render(request, 'detail.html', {'goods': goods})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 284, in do_extends
+    nodelist = parser.parse()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 508, in parse
+    raise self.error(token, e)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 222, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 502, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 552, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 117: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-01-19 15:20:19,403] [ERROR] "GET /detail/26 HTTP/1.1" 500 189170
+[2022-01-19 15:21:02,259] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 40, in get
+    return render(request, 'detail.html', {'goods': goods})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add' not found. 'add' is not a valid view function or pattern name.
+[2022-01-19 15:21:02,260] [ERROR] "GET /detail/26 HTTP/1.1" 500 179208
+[2022-01-19 15:21:03,136] [ERROR] Internal Server Error: /detail/26
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 40, in get
+    return render(request, 'detail.html', {'goods': goods})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add' not found. 'add' is not a valid view function or pattern name.
+[2022-01-19 15:21:03,137] [ERROR] "GET /detail/26 HTTP/1.1" 500 179208
+[2022-01-19 15:53:13,048] [ERROR] Internal Server Error: /detail/37
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 41, in get
+    return render(request, 'detail.html', {'goods': goods, 'show_goods_list': show_goods_list})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add' not found. 'add' is not a valid view function or pattern name.
+[2022-01-19 15:53:13,049] [ERROR] "GET /detail/37 HTTP/1.1" 500 182908
+[2022-01-19 15:53:14,436] [ERROR] Internal Server Error: /detail/37
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/goods/views.py", line 41, in get
+    return render(request, 'detail.html', {'goods': goods, 'show_goods_list': show_goods_list})
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 729, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add' not found. 'add' is not a valid view function or pattern name.
+[2022-01-19 15:53:14,437] [ERROR] "GET /detail/37 HTTP/1.1" 500 182908
+[2022-01-19 16:46:49,816] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 17:20:05,329] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 18:17:12,663] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'name' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 26, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods_id, user=user.id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 457, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 923, in _do_insert
+    return manager._insert(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1441, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'name' cannot be null")
+[2022-01-19 18:17:12,665] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 232287
+[2022-01-19 18:17:43,820] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'name' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 26, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods_id, user=user.id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 457, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 923, in _do_insert
+    return manager._insert(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1441, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'name' cannot be null")
+[2022-01-19 18:17:43,820] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 232287
+[2022-01-19 18:18:29,326] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 26, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods_id, user=user.id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'26'": "GoodsCart.goods" must be a "GoodsSKU" instance.
+[2022-01-19 18:18:29,327] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 95547
+[2022-01-19 18:20:02,679] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 29, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods, user=user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f46f80cb310>>": "GoodsCart.user" must be a "User" instance.
+[2022-01-19 18:20:02,680] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 96453
+[2022-01-19 18:20:04,335] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 29, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods, user=user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f46f37aab50>>": "GoodsCart.user" must be a "User" instance.
+[2022-01-19 18:20:04,336] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 96453
+[2022-01-19 18:20:05,561] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 29, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods, user=user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f46f378e850>>": "GoodsCart.user" must be a "User" instance.
+[2022-01-19 18:20:05,561] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 96453
+[2022-01-19 18:21:08,692] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 29, in post
+    goods_cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, goods=goods, user=user)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f46f3789160>>": "GoodsCart.user" must be a "User" instance.
+[2022-01-19 18:21:08,693] [ERROR] "POST /cart/add?goods_id=26&goods_name=%E5%9C%9F%E9%B8%A1%E8%9B%8B&goods_price=4&goods_unit=5%E4%B8%AA&goods_count=2 HTTP/1.1" 500 96453
+[2022-01-19 18:21:53,059] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 18:35:27,065] [ERROR] User matching query does not exist.
+[2022-01-19 19:21:52,446] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:52,447] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:53,457] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:53,458] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:54,561] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:54,561] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:55,236] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:55,236] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:55,451] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:55,451] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:55,670] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:55,671] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:21:55,853] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:21:55,854] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:22:01,257] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:22:01,258] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:22:19,288] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 23, in post
+    json_date = json.loads(request.data)
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-01-19 19:22:19,289] [ERROR] "POST /cart/add HTTP/1.1" 500 78227
+[2022-01-19 19:25:08,452] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:25:08,453] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:25:10,209] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:25:10,210] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:25:11,292] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:25:11,293] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:25:11,484] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:25:11,485] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:25:11,664] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+[2022-01-19 19:25:11,665] [ERROR] "POST /cart/add HTTP/1.1" 500 78281
+[2022-01-19 19:25:59,428] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 22, in post
+    json_date = json.loads(request.data)
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2022-01-19 19:25:59,428] [ERROR] "POST /cart/add HTTP/1.1" 500 78227
+[2022-01-19 22:01:24,458] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 34, in post
+    cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, user=user.id, goods=goods_id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "5": "GoodsCart.user" must be a "User" instance.
+[2022-01-19 22:01:24,459] [ERROR] "POST /cart/add HTTP/1.1" 500 98945
+[2022-01-19 22:02:10,745] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 34, in post
+    cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, user=user, goods=goods_id)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 455, in create
+    obj = self.model(**kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 489, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'27'": "GoodsCart.goods" must be a "GoodsSKU" instance.
+[2022-01-19 22:02:10,747] [ERROR] "POST /cart/add HTTP/1.1" 500 99091
+[2022-01-19 22:02:56,491] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1822, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '数 量：5'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 36, in post
+    cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, user=user, goods=goods)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 457, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 923, in _do_insert
+    return manager._insert(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1440, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1382, in as_sql
+    value_rows = [
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1324, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 839, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 834, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1824, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'count' expected a number but got '数 量：5'.
+[2022-01-19 22:02:56,494] [ERROR] "POST /cart/add HTTP/1.1" 500 163122
+[2022-01-19 22:02:58,018] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1822, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '数 量：5'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 36, in post
+    cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, user=user, goods=goods)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 457, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 923, in _do_insert
+    return manager._insert(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1440, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1382, in as_sql
+    value_rows = [
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1324, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 839, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 834, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1824, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'count' expected a number but got '数 量：5'.
+[2022-01-19 22:02:58,018] [ERROR] "POST /cart/add HTTP/1.1" 500 163122
+[2022-01-19 22:16:02,682] [ERROR] Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1551, in to_python
+    return decimal.Decimal(value)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 38, in post
+    cart = GoodsCart.objects.create(name=goods_name, price=goods_price, count=goods_count, unite=goods_unit, user=user, goods=goods)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 457, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 885, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/base.py", line 923, in _do_insert
+    return manager._insert(
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1301, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1440, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1382, in as_sql
+    value_rows = [
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1383, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1324, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1560, in get_db_prep_save
+    return connection.ops.adapt_decimalfield_value(self.to_python(value), self.max_digits, self.decimal_places)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1553, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“¥23.00”的值应该是一个十进制数字。']
+[2022-01-19 22:16:02,684] [ERROR] "POST /cart/add HTTP/1.1" 500 158564
+[2022-01-19 22:40:59,205] [ERROR] unsupported operand type(s) for +=: 'int' and 'str', 保存到数据库失败
+[2022-01-19 22:41:06,345] [ERROR] unsupported operand type(s) for +=: 'int' and 'str', 保存到数据库失败
+[2022-01-19 23:01:17,387] [ERROR] Internal Server Error: /cart/cart
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'cart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/git/fresh/dfresh/apps/cart/views.py", line 41, in get
+    return render(request, 'cart.html', context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 442, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/lqs/桌面/git/fresh/venv/lib/python3.8/site-packages/django/urls/base.py", line 77, in reverse
+    raise NoReverseMatch(
+django.urls.exceptions.NoReverseMatch: 'cart' is not a registered namespace inside 'cart'
+[2022-01-19 23:01:17,389] [ERROR] "GET /cart/cart HTTP/1.1" 500 224494
+[2022-01-19 23:01:38,093] [ERROR] list index out of range, lqs没有地址信息
+[2022-01-19 23:01:42,365] [ERROR] list index out of range, lqs没有地址信息
