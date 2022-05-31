@@ -269,11 +269,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' #固定写法
 EMAIL_HOST = 'smtp.qq.com' #SMTP地址
 EMAIL_PORT = 25 #SMTP端口
 EMAIL_HOST_USER = '749062870@qq.com' #发送邮件的邮箱
-EMAIL_HOST_PASSWORD = 'dnievkdehwuobbdi'  # 授权码
+EMAIL_HOST_PASSWORD = 'xwavsdrfyoigbfeb'  # 授权码
 # EMAIL_SUBJECT_PREFIX = '小松' #为邮件Subject-line前缀,默认是'[django]'
 # EMAIL_USE_TLS = True  # 与SMTP服务器通信时，是否启动TLS链接(安全链接)默认false
 # EMAIL_USE_SSL = True        # SSL加密方式
-# #收件人看到的发件人，必须和上面的邮箱一样，否则发不出去
+#收件人看到的发件人，必须和上面的邮箱一样，否则发不出去
 EMAIL_FROM = '天天生鲜<749062870@qq.com>'
 
 
@@ -368,7 +368,7 @@ BUCKET_ACL_TYPE = "public-read"  # private, public-read, public-read-write
 
 # 设置上传的静态文件，需要上传静态文件的记得添加此项
 # STATICFILES_STORAGE = 'aliyun_oss2_storage.backends.AliyunStaticStorage'
-
+ALIYUB_OSS_BASE_URL = "https://lqs-fresh.oss-cn-chengdu.aliyuncs.com/media/"
 
 ALIYUN_OSS_CNAME = ""  # 自定义域名，如果不需要可以不填写
 

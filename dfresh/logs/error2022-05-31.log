@@ -886,3 +886,134 @@ Traceback (most recent call last):
     base_path = force_text(self.location)
 NameError: name 'force_text' is not defined
 [2022-05-31 21:40:37,296] [ERROR] "POST /admin/goods/goodstype/add/ HTTP/1.1" 500 199651
+[2022-05-31 22:26:53,599] [ERROR] Internal Server Error: /admin/goods/goodstype/1/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 208, in render
+    return template.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 177, in render
+    return self._render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1065, in render
+    return render_value_in_context(output, context)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1042, in render_value_in_context
+    value = str(value)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/utils/html.py", line 382, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/boundfield.py", line 99, in as_widget
+    return widget.render(
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 275, in render
+    context = self.get_context(name, value, attrs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 466, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 328, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 267, in get_context
+    "value": self.format_value(value),
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 462, in format_value
+    if self.is_initial(value):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/forms/widgets.py", line 456, in is_initial
+    return bool(value and getattr(value, "url", False))
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 66, in url
+    return self.storage.url(self.name)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django_aliyun_oss2_storage-0.1.2-py3.10.egg/aliyun_oss2_storage/backends.py", line 187, in url
+    return settings.ALIPAY_BASE_URL + name
+TypeError: can only concatenate str (not "bytes") to str
+[2022-05-31 22:26:53,603] [ERROR] "GET /admin/goods/goodstype/1/change/ HTTP/1.1" 500 685400
+[2022-05-31 22:32:36,974] [ERROR] list index out of range, lqs没有地址信息
+[2022-05-31 22:52:31,349] [ERROR] User matching query does not exist.
+[2022-05-31 23:03:12,637] [ERROR] list index out of range, liqisong没有地址信息
+[2022-05-31 23:13:24,367] [ERROR] User matching query does not exist.
+[2022-05-31 23:16:35,187] [ERROR] list index out of range, liqisong没有地址信息
