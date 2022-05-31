@@ -118,7 +118,7 @@ WSGI_APPLICATION = 'dfresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'daliyfresh',
+        'NAME': 'fresh',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': 'lqs',
@@ -348,19 +348,29 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
 # 自定义的fdfs文件服务器
-DEFAULT_FILE_STORAGE = 'utils.storage.FastDFSStorage'
+# DEFAULT_FILE_STORAGE = 'utils.storage.FastDFSStorage'
 
 
 # 使用oss
 # pip install oss2
-# pip install django-oss-storage
-OSS_ACCESS_KEY_ID  = "xxxxx"
-OSS_ACCESS_KEY_SECRET  = "xxxxx"
-OSS_ENDPOINT   = "xxxxx"
-OSS_BUCKET_NAME  = "xxxxx"
-# mediafile自动上传
-DEFAULT_FILE_STORAGE  = 'django_oss_storage.backends.OssMediaStorage'
-MEDIA_URL = '/media/'
+# pip install django-oss2-storage
+# 使用OSS存储文件
+DEFAULT_FILE_STORAGE = 'aliyun_oss2_storage.backends.AliyunMediaStorage'
+
+# 配置OSS信息
+ACCESS_KEY_ID = "LTAI5tMMRUVcNmfWrM5RjUyX"
+ACCESS_KEY_SECRET = "Fchr5xqVXddeT869ptwf6TfthZ9tOE"
+PREFIX_URL = 'https://'
+END_POINT = "oss-cn-chengdu.aliyuncs.com"  # OSS存储节点，基本上只要改城市
+BUCKET_NAME = "lqs-fresh"
+BUCKET_ACL_TYPE = "public-read"  # private, public-read, public-read-write
+
+
+# 设置上传的静态文件，需要上传静态文件的记得添加此项
+# STATICFILES_STORAGE = 'aliyun_oss2_storage.backends.AliyunStaticStorage'
+
+
+ALIYUN_OSS_CNAME = ""  # 自定义域名，如果不需要可以不填写
 
 
 
