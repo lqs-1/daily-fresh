@@ -1,0 +1,180 @@
+[2022-06-01 15:57:15,804] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:57:15,805] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98011
+[2022-06-01 15:57:29,562] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:57:29,562] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98323
+[2022-06-01 15:57:37,981] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:57:37,982] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98335
+[2022-06-01 15:57:48,858] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:57:48,858] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98335
+[2022-06-01 15:57:50,482] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:57:50,482] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98309
+[2022-06-01 15:58:04,603] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:58:04,604] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98269
+[2022-06-01 15:59:16,625] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:59:16,626] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98277
+[2022-06-01 15:59:20,684] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:59:20,685] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98098
+[2022-06-01 15:59:26,701] [ERROR] Internal Server Error: /user/user/1
+Traceback (most recent call last):
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/apps/user/views.py", line 252, in get
+    goods = GoodsSKU.objects.get(id=goods_id)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/py-project-fresh/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+apps.goods.models.GoodsSKU.DoesNotExist: GoodsSKU matching query does not exist.
+[2022-06-01 15:59:26,701] [ERROR] "GET /user/user/1 HTTP/1.1" 500 98277

@@ -123,6 +123,9 @@ class UserActiveGetView(View):
 
 class UserLoginView(View):
     def get(self, request):
+        if request.user is not None:
+            return redirect("goods:index")
+
         if 'username' in request.COOKIES:
             username = request.COOKIES.get('username')
             password = request.COOKIES.get('password')
