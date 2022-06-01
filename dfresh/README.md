@@ -4,10 +4,10 @@
 ```html
     pip install django
     pip install pymysql
-    pip install django-tinymc
+    pip install django-tinymce
     pip install Pillow
     pip install django-redis
-    pip install haystack
+    pip install django-haystack
     pip install itsdangerous
     pip install celery
     pip install django-cors-headers

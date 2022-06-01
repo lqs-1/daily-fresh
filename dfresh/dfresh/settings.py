@@ -413,7 +413,7 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 '''
     分词器使用：
-        安装全文检索框架：pip install haystack
+        安装全文检索框架：pip install django-haystack
         安装搜索引擎：pip install whoosh
         安装jieba分词器: pip install jieba
         
