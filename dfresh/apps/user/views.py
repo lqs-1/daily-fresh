@@ -123,7 +123,7 @@ class UserActiveGetView(View):
 
 class UserLoginView(View):
     def get(self, request):
-        if request.user is not None:
+        if request.COOKIES.get("user_id") is not None:
             return redirect("goods:index")
 
         if 'username' in request.COOKIES:
@@ -178,6 +178,7 @@ class UserLoginView(View):
         else:
             response.set_cookie('username')
             response.set_cookie('password')
+        response.set_cookie("user_id", user.id, max_age=7*24*3600)
         return response
 
 
@@ -188,7 +189,9 @@ class UserLoginView(View):
 class UserLogoutView(View):
     def get(self, request):
         logout(request)
-        return redirect('goods:index')
+        response = redirect('goods:index')
+        response.delete_cookie("user_id")
+        return response
 
 
 

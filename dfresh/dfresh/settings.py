@@ -119,8 +119,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fresh',
-        'HOST': 'localhost',
-        'USER': 'root',
+        'HOST': '104.168.68.86',
+        'USER': 'lqs',
         'PASSWORD': 'lqs',
         'PORT': 3306,
     }

@@ -2,20 +2,21 @@
 ## 1、项目部署
 ### 依赖安装
 ```html
-    pip install django
-    pip install pymysql
-    pip install django-tinymce
-    pip install Pillow
-    pip install django-redis
-    pip install django-haystack
-    pip install itsdangerous
-    pip install celery
-    pip install django-cors-headers
-    pip install whoosh
-    pip install jieba
-    pip install pyOpenSSL
-    pip install ../fdfs_client-py-master.zip
-    pip install python-alipay-sdk
+    pip install django  &&
+    pip install pymysql  &&
+    pip install django-tinymce  &&
+    pip install Pillow  &&
+    pip install django-redis  &&
+    pip install django-haystack  &&
+    pip install itsdangerous==2  &&
+    pip install celery  &&
+    pip install django-celery  &&
+    pip install django-cors-headers  &&
+    pip install whoosh  &&
+    pip install jieba  &&
+    pip install pyOpenSSL  &&
+    pip install ../fdfs_client-py-master.zip  &&
+    pip install python-alipay-sdk  &&
     python ../django-aliyun-oss2-storage-master/setup.py install
 ```
 
@@ -27,6 +28,8 @@
     如果选择fdfs那么就需要自己配置fastdfs的文件服务器，第二个就是oss的文件服务器，默认使用的是项目开发者的lqs-fresh仓库，这个
     配置都可以自定义。
     请注意两种文件存储的方案的数据库存档是不一样的，请注意添加前缀
+ 
+启动异步任务： celery -A celery_tasks.tasks worker -l info
 
 在配置全文检索的时候:
     whoosh路径：....../site-packages/whoosh
