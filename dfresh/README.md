@@ -11,13 +11,21 @@
     pip install itsdangerous==2  &&
     pip install celery  &&
     pip install django-celery  &&
+    sudo apt install celery && 
     pip install django-cors-headers  &&
     pip install whoosh  &&
     pip install jieba  &&
     pip install pyOpenSSL  &&
+    pip install 
     pip install ../fdfs_client-py-master.zip  &&
     pip install python-alipay-sdk  &&
-    python ../django-aliyun-oss2-storage-master/setup.py install
+    # 安装oss2
+    第一种   pip install django-aliyun-oss2-storage   然后修改backends.py下面的force_text为force_str
+    第二种   安装
+    python ../django-aliyun-oss2-storage-master/setup.py install  &&
+    python3 ../django-aliyun-oss2-storage-master/setup.py install  &&
+    sudo python3 ../django-aliyun-oss2-storage-master/setup.py install 
+
 ```
 
 
