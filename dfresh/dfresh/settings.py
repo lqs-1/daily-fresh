@@ -116,11 +116,23 @@ WSGI_APPLICATION = 'dfresh.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    # 生产环境
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'fresh',
+    #     'HOST': '104.168.68.86',
+    #     'USER': 'lqs',
+    #     'PASSWORD': 'lqs',
+    #     'PORT': 3306,
+    # },
+
+
+    # 开发环境
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fresh',
-        'HOST': '104.168.68.86',
-        'USER': 'lqs',
+        'HOST': 'localhost',
+        'USER': 'root',
         'PASSWORD': 'lqs',
         'PORT': 3306,
     }

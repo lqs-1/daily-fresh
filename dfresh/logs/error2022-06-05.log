@@ -1,0 +1,79 @@
+[2022-06-05 13:01:59,283] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 230, in ensure_connection
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 211, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 233, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '104.168.68.86' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/goods/views.py", line 32, in get
+    for goods_type in goods_type_list:
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1354, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1200, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 270, in cursor
+    return self._cursor()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 246, in _cursor
+    self.ensure_connection()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 229, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 230, in ensure_connection
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/base/base.py", line 211, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/asyncio.py", line 25, in inner
+    return func(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/backends/mysql/base.py", line 233, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '104.168.68.86' (timed out)")
+[2022-06-05 13:01:59,284] [ERROR] "GET / HTTP/1.1" 500 234831
+[2022-06-05 13:02:20,006] [ERROR] list index out of range, lqs没有地址信息

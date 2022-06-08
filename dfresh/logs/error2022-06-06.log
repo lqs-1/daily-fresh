@@ -1,0 +1,1330 @@
+[2022-06-06 10:21:19,135] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 10:21:20,045] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 10:21:20,047] [ERROR] "POST /order/pay HTTP/1.1" 500 104247
+[2022-06-06 10:21:21,190] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 10:21:21,654] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 10:21:24,853] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 10:21:24,869] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 10:21:25,352] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 10:21:25,357] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 10:21:29,278] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 10:21:29,599] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 11:39:02,646] [ERROR] Internal Server Error: /admin/goods/goodstype/6/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa5bd5c8af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd5c8af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd5c8af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd5c8af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:39:02,686] [ERROR] Internal Server Error: /admin/goods/goodstype/6/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa5bd57da80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd57da80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd57da80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd57da80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:39:02,701] [ERROR] Internal Server Error: /admin/goods/goodstype/6/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa5bd108400>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd108400>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd108400>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5bd108400>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:39:02,736] [ERROR] Internal Server Error: /admin/goods/goodstype/6/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa5be788ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5be788ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5be788ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /type%2Fbanner01.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa5be788ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:39:22,450] [ERROR] Internal Server Error: /admin/goods/goodstype/6/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)"}
+[2022-06-06 11:39:49,625] [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 862, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa432fdfe80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /?prefix=&marker=&max-keys=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa432fdfe80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /?prefix=&marker=&max-keys=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa432fdfe80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/goods/views.py", line 47, in get
+    return render(request, 'index.html', context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 1038, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 701, in resolve
+    obj = self.var.resolve(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 829, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/template/base.py", line 870, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 64, in url
+    return self.storage.url(self.name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/functional.py", line 248, in inner
+    self._setup()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 370, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 67, in __init__
+    if self.bucket_name not in self._list_bucket(self.service):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 38, in _list_bucket
+    return [bucket.name for bucket in BucketIterator(service)]
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 38, in <listcomp>
+    return [bucket.name for bucket in BucketIterator(service)]
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/iterators.py", line 40, in __next__
+    self.fetch_with_retry()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/iterators.py", line 48, in fetch_with_retry
+    self.is_truncated, self.next_marker = self._fetch()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/iterators.py", line 76, in _fetch
+    result = self.service.list_buckets(prefix=self.prefix,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 326, in list_buckets
+    resp = self._do('GET', '', '', params=listParam)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /?prefix=&marker=&max-keys=100 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa432fdfe80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:50:51,721] [ERROR] Internal Server Error: /admin/goods/indexpromotionbanner/1/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Read timed out. (read timeout=60)"}
+[2022-06-06 11:51:02,114] [ERROR] Internal Server Error: /admin/goods/indexpromotionbanner/1/change/
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fa438eb92a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /banner%2Fadv02.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa438eb92a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 43, in do_request
+    return Response(self.session.request(req.method, req.url,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /banner%2Fadv02.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa438eb92a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 622, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 56, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 236, in inner
+    return view(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1673, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1549, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1599, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1108, in save_model
+    obj.save()
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 743, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 780, in save_base
+    updated = self._save_table(
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in _save_table
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/base.py", line 859, in <listcomp>
+    values = [(f, None, (getattr(self, f.attname) if raw else f.pre_save(self, False)))
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 302, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/fields/files.py", line 89, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 53, in save
+    name = self.get_available_name(name, max_length=max_length)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/files/storage.py", line 87, in get_available_name
+    while self.exists(name) or (max_length and len(name) > max_length):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/aliyun_oss2_storage/backends.py", line 152, in exists
+    return self.bucket.object_exists(name)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1041, in object_exists
+    self.get_object_meta(key, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 1020, in get_object_meta
+    resp = self.__do_object('GET', key, params=params, headers=headers)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 2529, in __do_object
+    return self._do(method, self.bucket_name, key, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/api.py", line 227, in _do
+    resp = self.session.do_request(req, timeout=self.timeout)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/oss2/http.py", line 51, in do_request
+    raise RequestError(e)
+oss2.exceptions.RequestError: {'status': -2, 'x-oss-request-id': '', 'details': "RequestError: HTTPConnectionPool(host='lqs-fresh.oss-cn-chengdu.aliyuncs.com', port=80): Max retries exceeded with url: /banner%2Fadv02.jpg?objectMeta= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa438eb92a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))"}
+[2022-06-06 11:51:02,115] [ERROR] "POST /admin/goods/indexpromotionbanner/1/change/ HTTP/1.1" 500 297873
+[2022-06-06 14:21:40,690] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 14:21:40,735] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 14:21:40,736] [ERROR] "POST /order/pay HTTP/1.1" 500 104262
+[2022-06-06 14:21:45,000] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 14:21:45,046] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 14:21:45,046] [ERROR] "POST /order/pay HTTP/1.1" 500 104262
+[2022-06-06 14:21:45,332] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 14:21:45,351] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 14:21:45,351] [ERROR] "POST /order/pay HTTP/1.1" 500 104262
+[2022-06-06 14:21:45,627] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 14:21:45,683] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 14:21:45,683] [ERROR] "POST /order/pay HTTP/1.1" 500 104262
+[2022-06-06 14:21:45,848] [ERROR] Address matching query does not exist., lqs的订单保存失败
+[2022-06-06 14:21:45,900] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 14:21:45,900] [ERROR] "POST /order/pay HTTP/1.1" 500 104262
+[2022-06-06 15:30:14,746] [ERROR] User matching query does not exist.
+[2022-06-06 15:30:25,522] [ERROR] User matching query does not exist.
+[2022-06-06 15:30:40,406] [ERROR] User matching query does not exist.
+[2022-06-06 15:42:55,755] [ERROR] User matching query does not exist.
+[2022-06-06 15:45:50,994] [ERROR] User matching query does not exist.
+[2022-06-06 15:46:14,457] [ERROR] Address matching query does not exist., liqisong的订单保存失败
+[2022-06-06 15:46:14,533] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 15:46:14,534] [ERROR] "POST /order/pay HTTP/1.1" 500 104738
+[2022-06-06 15:46:15,452] [ERROR] Address matching query does not exist., liqisong的订单保存失败
+[2022-06-06 15:46:15,501] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 15:46:15,501] [ERROR] "POST /order/pay HTTP/1.1" 500 104738
+[2022-06-06 15:46:15,878] [ERROR] Address matching query does not exist., liqisong的订单保存失败
+[2022-06-06 15:46:15,923] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 15:46:15,924] [ERROR] "POST /order/pay HTTP/1.1" 500 104738
+[2022-06-06 15:46:16,239] [ERROR] Address matching query does not exist., liqisong的订单保存失败
+[2022-06-06 15:46:16,285] [ERROR] Internal Server Error: /order/pay
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 64, in post
+    addr=Address.objects.get(id=address_id),
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.DoesNotExist(
+apps.user.models.Address.DoesNotExist: Address matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 101, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/lqs/桌面/fresh-plus/dfresh/apps/order/views.py", line 82, in post
+    url = 'http://127.0.0.1:8000/goods/detail/' + goods.id
+TypeError: can only concatenate str (not "int") to str
+[2022-06-06 15:46:16,286] [ERROR] "POST /order/pay HTTP/1.1" 500 104738
+[2022-06-06 15:46:19,922] [ERROR] list index out of range, liqisong没有地址信息
